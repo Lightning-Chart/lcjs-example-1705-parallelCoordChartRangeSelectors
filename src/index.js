@@ -58,7 +58,8 @@ fetch(document.head.baseURI + 'examples/assets/1702/machine-learning-accuracy-da
         parallelCoordinateChart.setPadding({ right: 140 })
 
         // Display data of parallel coordinate chart selected series using Data Grid
-        parallelCoordinateChart.onSelectedSeriesChanged((_, selectedSeries) => {
+        parallelCoordinateChart.addEventListener('seriesselect', (event) => {
+            const { selectedSeries } = event
             selectedSeries.sort((a, b) => b.getData()['accuracy'] - a.getData()['accuracy'])
             const tableContent = [['batch_size', 'channels_one', 'learning_rate', 'accuracy']]
             selectedSeries.forEach((series) => {
