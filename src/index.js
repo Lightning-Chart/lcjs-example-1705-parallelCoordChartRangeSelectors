@@ -1,5 +1,5 @@
 const lcjs = require('@lightningchart/lcjs')
-const { lightningChart, Themes, LUT, regularColorSteps, LegendBoxBuilders } = lcjs
+const { lightningChart, Themes, LUT, regularColorSteps, LegendPosition } = lcjs
 
 const exampleContainer = document.getElementById('chart') || document.body
 if (exampleContainer === document.body) {
@@ -21,6 +21,7 @@ const lc = lightningChart({
         })
 const parallelCoordinateChart = lc
     .ParallelCoordinateChart({
+        legend: { position: LegendPosition.RightCenter },
         container: containerChart1,
         theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined,
     })
@@ -53,9 +54,6 @@ fetch(document.head.baseURI + 'examples/assets/1702/machine-learning-accuracy-da
             }),
         })
         data.forEach((sample) => parallelCoordinateChart.addSeries().setData(sample))
-
-        const legend = parallelCoordinateChart.addLegendBox(LegendBoxBuilders.VerticalLegendBox).add(parallelCoordinateChart)
-        parallelCoordinateChart.setPadding({ right: 140 })
 
         // Display data of parallel coordinate chart selected series using Data Grid
         parallelCoordinateChart.addEventListener('seriesselect', (event) => {
