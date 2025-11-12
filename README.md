@@ -39,6 +39,10 @@ If the chart contains several Range selectors, then only series that pass all th
 
 ## API Links
 
+* [Parallel Coordinate Chart]
+* [LUT]
+* [Range Selector]
+* [DataGrid]
 
 
 ## Support
@@ -62,4 +66,8 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © LightningChart Ltd 2009-2025. All rights reserved.
 
 
+[Parallel Coordinate Chart]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/classes/ParallelCoordinateChart.html
+[LUT]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/classes/LUT.html
+[Range Selector]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/classes/ParallelCoordinateAxis.html#addRangeSelector
+[DataGrid]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/classes/DataGrid.html
 
