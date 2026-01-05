@@ -1,6 +1,6 @@
-# Parallel Coordinate Chart with Range selector and Data Grid
+# Parallel Coordinate Chart + Range selector + Data Grid
 
-![Parallel Coordinate Chart with Range selector and Data Grid](parallelCoordChartRangeSelectors-darkGold.png)
+![Parallel Coordinate Chart + Range selector + Data Grid](parallelCoordChartRangeSelectors-darkGold.png)
 
 This demo application belongs to the set of examples for LightningChart JS, data visualization library for JavaScript.
 
